@@ -55,24 +55,22 @@ Verify all cars are filtered by first registration
 #pass it to python method which will return if there are registration before 2014
  
     Sleep   3s
+
     @{locators}    Get Webelements      //*[contains(@class,'specItem___')][1]
-    ${result}=       Create List
+    @{result}=       Create List
+    
     :FOR   ${locator}   IN    @{locators}
         \       ${name}=    Get Text    ${locator}
-        \       Append To List  ${result}  ${name}         
+        \       ${matches}=		Get Regexp Matches      ${name}  	\\d{4}
+        \       Append To List   ${result}    ${matches}
+         ${flat}    Evaluate    [item for sublist in ${result} for item in (sublist if isinstance(sublist, list) else [sublist])]
 
-    ${yearsSorted}=    Return Years Only    ${result}
+    ${numbs}=    Convert To Integer   2014
 
-    #python script to check if there are registration before 2014
-    ${boleanY}=    Registration    ${yearsSorted}
-
-    Should Be Equal as Strings     ${boleanY}   True
-
-    #list with registration
-    Log  ${yearsSorted}
-    Log  ${boleanY}
-
-
+    :FOR   ${locator}   IN    @{flat}
+    \   Log   ${locator}
+    \   Run Keyword Unless  ${locator} >= ${numbs}      Pass   
+ 
 User Select Filter for Price Decsending 
     Wait Until Element Is Visible    //select[contains(@name,'sort')]  
     Click Element                    //select[contains(@name,'sort')]
@@ -86,18 +84,19 @@ Verify all Cars are Filtered By Price Descending
     Sleep   2s
     @{locators}    Get Webelements      //*[contains(@class,'totalPrice')][1]
     ${priceAll}=       Create List
+    ${sortedList}=       Create List
     :FOR   ${locator}   IN    @{locators}
         \       ${name}=    Get Text    ${locator}
-        \       Append To List  ${priceAll}  ${name}     
+        \       ${matches}=		Get Regexp Matches      ${name}  	\^.....     
+        \       Append To List  ${priceAll}  ${matches}
+        ${flat}    Evaluate    [item for sublist in ${priceAll} for item in (sublist if isinstance(sublist, list) else [sublist])]
 
-    ${prices}=    Return Price Only    ${priceAll}
-
-    ${sortPrices}=    Sorted List     ${prices}
+    ${sortPrices}=    Sorted List     ${flat}
 
     Should Be Equal as Strings     ${sortPrices}   True
 
-    Log  ${prices}
-    Log  ${priceAll}   
+    Log  ${sortPrices}
+    Log  ${flat}   
 
 
  

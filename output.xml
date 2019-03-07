@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.7.1 on win32)" generated="20190302 21:33:35.796" rpa="false">
-<suite id="s1" name="TestCases" source="C:\Users\Kikkoman\Google Drive\WORK\Auto1\TestCases.robot">
+<robot generator="Robot 3.1.1 (Python 3.7.1 on win32)" generated="20190307 12:46:06.001" rpa="false">
+<suite id="s1" name="TestCases" source="C:\Users\Milan\Google Drive\WORK\Auto1\TestCases.robot">
 <kw name="Open URL Locally" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -8,14 +8,14 @@
 <arg>https://www.autohero.com/de/search/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20190302 21:33:36.138" level="INFO">Opening browser 'chrome' to base url 'https://www.autohero.com/de/search/'.</msg>
-<status status="PASS" starttime="20190302 21:33:36.138" endtime="20190302 21:33:42.468"></status>
+<msg timestamp="20190307 12:46:06.446" level="INFO">Opening browser 'chrome' to base url 'https://www.autohero.com/de/search/'.</msg>
+<status status="PASS" starttime="20190307 12:46:06.446" endtime="20190307 12:46:13.181"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190302 21:33:42.469" endtime="20190302 21:33:43.607"></status>
+<status status="PASS" starttime="20190307 12:46:13.181" endtime="20190307 12:46:14.362"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:33:36.137" endtime="20190302 21:33:43.607"></status>
+<status status="PASS" starttime="20190307 12:46:06.442" endtime="20190307 12:46:14.362"></status>
 </kw>
 <test id="s1-t1" name="TC1 - Check Filters on Advanced Searh Page">
 <kw name="Given Open URL AutoHero">
@@ -24,10 +24,10 @@
 <arguments>
 <arg>https://www.autohero.com/de/search/</arg>
 </arguments>
-<msg timestamp="20190302 21:33:43.620" level="INFO">Opening url 'https://www.autohero.com/de/search/'</msg>
-<status status="PASS" starttime="20190302 21:33:43.619" endtime="20190302 21:33:45.887"></status>
+<msg timestamp="20190307 12:46:14.365" level="INFO">Opening url 'https://www.autohero.com/de/search/'</msg>
+<status status="PASS" starttime="20190307 12:46:14.365" endtime="20190307 12:46:15.848"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:33:43.619" endtime="20190302 21:33:45.888"></status>
+<status status="PASS" starttime="20190307 12:46:14.364" endtime="20190307 12:46:15.848"></status>
 </kw>
 <kw name="And User is on Advanced Search Page">
 <kw name="Sleep" library="BuiltIn">
@@ -35,25 +35,25 @@
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190302 21:33:50.904" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20190302 21:33:45.901" endtime="20190302 21:33:50.904"></status>
+<msg timestamp="20190307 12:46:20.856" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20190307 12:46:15.849" endtime="20190307 12:46:20.856"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//button[contains(text(),'Erweiterte Suche')]</arg>
 </arguments>
-<msg timestamp="20190302 21:33:50.905" level="INFO">Clicking element '//button[contains(text(),'Erweiterte Suche')]'.</msg>
-<status status="PASS" starttime="20190302 21:33:50.904" endtime="20190302 21:33:51.396"></status>
+<msg timestamp="20190307 12:46:20.856" level="INFO">Clicking element '//button[contains(text(),'Erweiterte Suche')]'.</msg>
+<status status="PASS" starttime="20190307 12:46:20.856" endtime="20190307 12:46:21.195"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>//span[contains(text(),'Erstzulassung ab')]</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:33:51.397" endtime="20190302 21:33:51.529"></status>
+<status status="PASS" starttime="20190307 12:46:21.195" endtime="20190307 12:46:21.270"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:33:45.900" endtime="20190302 21:33:51.529"></status>
+<status status="PASS" starttime="20190307 12:46:15.849" endtime="20190307 12:46:21.271"></status>
 </kw>
 <kw name="When User Select Filter for First registration">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -61,41 +61,41 @@
 <arguments>
 <arg>//span[contains(text(),'Erstzulassung ab')]</arg>
 </arguments>
-<msg timestamp="20190302 21:33:51.532" level="INFO">Clicking element '//span[contains(text(),'Erstzulassung ab')]'.</msg>
-<status status="PASS" starttime="20190302 21:33:51.532" endtime="20190302 21:33:51.685"></status>
+<msg timestamp="20190307 12:46:21.272" level="INFO">Clicking element '//span[contains(text(),'Erstzulassung ab')]'.</msg>
+<status status="PASS" starttime="20190307 12:46:21.272" endtime="20190307 12:46:21.424"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>//select[@name='yearRange.min']/*[text()='2014']</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:33:51.686" endtime="20190302 21:33:51.745"></status>
+<status status="PASS" starttime="20190307 12:46:21.424" endtime="20190307 12:46:21.479"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//select[@name='yearRange.min']/*[text()='2014']</arg>
 </arguments>
-<msg timestamp="20190302 21:33:51.745" level="INFO">Clicking element '//select[@name='yearRange.min']/*[text()='2014']'.</msg>
-<status status="PASS" starttime="20190302 21:33:51.745" endtime="20190302 21:33:51.940"></status>
+<msg timestamp="20190307 12:46:21.479" level="INFO">Clicking element '//select[@name='yearRange.min']/*[text()='2014']'.</msg>
+<status status="PASS" starttime="20190307 12:46:21.479" endtime="20190307 12:46:21.631"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20190302 21:33:54.942" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20190302 21:33:51.940" endtime="20190302 21:33:54.942"></status>
+<msg timestamp="20190307 12:46:24.642" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190307 12:46:21.631" endtime="20190307 12:46:24.642"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//a[contains(text(),'Ergebnisse')]</arg>
 </arguments>
-<msg timestamp="20190302 21:33:54.943" level="INFO">Clicking element '//a[contains(text(),'Ergebnisse')]'.</msg>
-<status status="PASS" starttime="20190302 21:33:54.942" endtime="20190302 21:33:55.625"></status>
+<msg timestamp="20190307 12:46:24.642" level="INFO">Clicking element '//a[contains(text(),'Ergebnisse')]'.</msg>
+<status status="PASS" starttime="20190307 12:46:24.642" endtime="20190307 12:46:25.427"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:33:51.532" endtime="20190302 21:33:55.625"></status>
+<status status="PASS" starttime="20190307 12:46:21.271" endtime="20190307 12:46:25.428"></status>
 </kw>
 <kw name="And User Select Filter for Price Decsending">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -103,33 +103,33 @@
 <arguments>
 <arg>//select[contains(@name,'sort')]</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:33:55.627" endtime="20190302 21:33:55.808"></status>
+<status status="PASS" starttime="20190307 12:46:25.432" endtime="20190307 12:46:25.645"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//select[contains(@name,'sort')]</arg>
 </arguments>
-<msg timestamp="20190302 21:33:55.809" level="INFO">Clicking element '//select[contains(@name,'sort')]'.</msg>
-<status status="PASS" starttime="20190302 21:33:55.809" endtime="20190302 21:33:56.464"></status>
+<msg timestamp="20190307 12:46:25.646" level="INFO">Clicking element '//select[contains(@name,'sort')]'.</msg>
+<status status="PASS" starttime="20190307 12:46:25.646" endtime="20190307 12:46:26.311"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190302 21:33:58.466" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20190302 21:33:56.465" endtime="20190302 21:33:58.466"></status>
+<msg timestamp="20190307 12:46:28.316" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20190307 12:46:26.312" endtime="20190307 12:46:28.316"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[text()='Höchster Preis']</arg>
 </arguments>
-<msg timestamp="20190302 21:33:58.467" level="INFO">Clicking element '//*[text()='Höchster Preis']'.</msg>
-<status status="PASS" starttime="20190302 21:33:58.466" endtime="20190302 21:33:58.774"></status>
+<msg timestamp="20190307 12:46:28.316" level="INFO">Clicking element '//*[text()='Höchster Preis']'.</msg>
+<status status="PASS" starttime="20190307 12:46:28.316" endtime="20190307 12:46:28.700"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:33:55.626" endtime="20190302 21:33:58.774"></status>
+<status status="PASS" starttime="20190307 12:46:25.431" endtime="20190307 12:46:28.700"></status>
 </kw>
 <kw name="Then Verify all cars are filtered by First Registration">
 <kw name="Sleep" library="BuiltIn">
@@ -137,8 +137,8 @@
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20190302 21:34:01.782" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20190302 21:33:58.781" endtime="20190302 21:34:01.782"></status>
+<msg timestamp="20190307 12:46:31.722" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190307 12:46:28.705" endtime="20190307 12:46:31.722"></status>
 </kw>
 <kw name="Get WebElements" library="SeleniumLibrary">
 <doc>Returns list of WebElement objects matching the ``locator``.</doc>
@@ -148,19 +148,19 @@
 <assign>
 <var>@{locators}</var>
 </assign>
-<msg timestamp="20190302 21:34:01.830" level="INFO">@{locators} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="76a0880fab8ec87878408e2b8919142b", element="0.41694077529439744-7")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (session="76a0880fa...</msg>
-<status status="PASS" starttime="20190302 21:34:01.782" endtime="20190302 21:34:01.830"></status>
+<msg timestamp="20190307 12:46:31.742" level="INFO">@{locators} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="cbbae7a94939c26d57a46af3abe26f04", element="0.4119628156363082-7")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (session="cbbae7a949...</msg>
+<status status="PASS" starttime="20190307 12:46:31.722" endtime="20190307 12:46:31.742"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
 <assign>
-<var>${result}</var>
+<var>@{result}</var>
 </assign>
-<msg timestamp="20190302 21:34:01.831" level="INFO">${result} = []</msg>
-<status status="PASS" starttime="20190302 21:34:01.830" endtime="20190302 21:34:01.831"></status>
+<msg timestamp="20190307 12:46:31.746" level="INFO">@{result} = [ ]</msg>
+<status status="PASS" starttime="20190307 12:46:31.746" endtime="20190307 12:46:31.746"></status>
 </kw>
 <kw name="${locator} IN [ @{locators} ]" type="for">
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-7&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-7&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -169,21 +169,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:01.866" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:31.772" level="INFO">${name} = •
 07/2016</msg>
-<status status="PASS" starttime="20190302 21:34:01.831" endtime="20190302 21:34:01.866"></status>
+<status status="PASS" starttime="20190307 12:46:31.746" endtime="20190307 12:46:31.772"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:31.772" level="INFO">${matches} = ['2016']</msg>
+<status status="PASS" starttime="20190307 12:46:31.772" endtime="20190307 12:46:31.772"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:01.866" endtime="20190302 21:34:01.867"></status>
+<status status="PASS" starttime="20190307 12:46:31.772" endtime="20190307 12:46:31.772"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:01.831" endtime="20190302 21:34:01.867"></status>
+<status status="PASS" starttime="20190307 12:46:31.746" endtime="20190307 12:46:31.772"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-8&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-8&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -192,21 +204,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:01.895" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:31.792" level="INFO">${name} = •
 05/2016</msg>
-<status status="PASS" starttime="20190302 21:34:01.867" endtime="20190302 21:34:01.895"></status>
+<status status="PASS" starttime="20190307 12:46:31.772" endtime="20190307 12:46:31.792"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:31.795" level="INFO">${matches} = ['2016']</msg>
+<status status="PASS" starttime="20190307 12:46:31.795" endtime="20190307 12:46:31.795"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:01.895" endtime="20190302 21:34:01.895"></status>
+<status status="PASS" starttime="20190307 12:46:31.795" endtime="20190307 12:46:31.795"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:01.867" endtime="20190302 21:34:01.895"></status>
+<status status="PASS" starttime="20190307 12:46:31.772" endtime="20190307 12:46:31.795"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-9&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-9&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -215,21 +239,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:01.927" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:31.815" level="INFO">${name} = •
 04/2016</msg>
-<status status="PASS" starttime="20190302 21:34:01.896" endtime="20190302 21:34:01.927"></status>
+<status status="PASS" starttime="20190307 12:46:31.795" endtime="20190307 12:46:31.815"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:31.815" level="INFO">${matches} = ['2016']</msg>
+<status status="PASS" starttime="20190307 12:46:31.815" endtime="20190307 12:46:31.815"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:01.927" endtime="20190302 21:34:01.927"></status>
+<status status="PASS" starttime="20190307 12:46:31.815" endtime="20190307 12:46:31.815"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:01.896" endtime="20190302 21:34:01.927"></status>
+<status status="PASS" starttime="20190307 12:46:31.795" endtime="20190307 12:46:31.815"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-10&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-10&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -238,21 +274,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:01.960" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:31.832" level="INFO">${name} = •
 06/2017</msg>
-<status status="PASS" starttime="20190302 21:34:01.928" endtime="20190302 21:34:01.960"></status>
+<status status="PASS" starttime="20190307 12:46:31.815" endtime="20190307 12:46:31.832"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:31.832" level="INFO">${matches} = ['2017']</msg>
+<status status="PASS" starttime="20190307 12:46:31.832" endtime="20190307 12:46:31.832"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:01.960" endtime="20190302 21:34:01.961"></status>
+<status status="PASS" starttime="20190307 12:46:31.832" endtime="20190307 12:46:31.832"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:01.928" endtime="20190302 21:34:01.961"></status>
+<status status="PASS" starttime="20190307 12:46:31.815" endtime="20190307 12:46:31.832"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-11&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-11&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -261,21 +309,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:01.987" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:31.856" level="INFO">${name} = •
 05/2015</msg>
-<status status="PASS" starttime="20190302 21:34:01.961" endtime="20190302 21:34:01.987"></status>
+<status status="PASS" starttime="20190307 12:46:31.836" endtime="20190307 12:46:31.856"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:31.856" level="INFO">${matches} = ['2015']</msg>
+<status status="PASS" starttime="20190307 12:46:31.856" endtime="20190307 12:46:31.856"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:01.987" endtime="20190302 21:34:01.987"></status>
+<status status="PASS" starttime="20190307 12:46:31.856" endtime="20190307 12:46:31.856"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:01.961" endtime="20190302 21:34:01.987"></status>
+<status status="PASS" starttime="20190307 12:46:31.832" endtime="20190307 12:46:31.856"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-12&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-12&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -284,21 +344,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.014" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:31.875" level="INFO">${name} = •
 05/2017</msg>
-<status status="PASS" starttime="20190302 21:34:01.988" endtime="20190302 21:34:02.014"></status>
+<status status="PASS" starttime="20190307 12:46:31.856" endtime="20190307 12:46:31.875"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:31.875" level="INFO">${matches} = ['2017']</msg>
+<status status="PASS" starttime="20190307 12:46:31.875" endtime="20190307 12:46:31.875"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.014" endtime="20190302 21:34:02.015"></status>
+<status status="PASS" starttime="20190307 12:46:31.875" endtime="20190307 12:46:31.875"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:01.987" endtime="20190302 21:34:02.015"></status>
+<status status="PASS" starttime="20190307 12:46:31.856" endtime="20190307 12:46:31.875"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-13&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-13&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -307,21 +379,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.041" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:31.901" level="INFO">${name} = •
 06/2015</msg>
-<status status="PASS" starttime="20190302 21:34:02.015" endtime="20190302 21:34:02.041"></status>
+<status status="PASS" starttime="20190307 12:46:31.875" endtime="20190307 12:46:31.901"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:31.901" level="INFO">${matches} = ['2015']</msg>
+<status status="PASS" starttime="20190307 12:46:31.901" endtime="20190307 12:46:31.901"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.041" endtime="20190302 21:34:02.042"></status>
+<status status="PASS" starttime="20190307 12:46:31.901" endtime="20190307 12:46:31.901"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.015" endtime="20190302 21:34:02.042"></status>
+<status status="PASS" starttime="20190307 12:46:31.875" endtime="20190307 12:46:31.901"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-14&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-14&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -330,21 +414,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.068" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:31.922" level="INFO">${name} = •
 05/2017</msg>
-<status status="PASS" starttime="20190302 21:34:02.042" endtime="20190302 21:34:02.068"></status>
+<status status="PASS" starttime="20190307 12:46:31.901" endtime="20190307 12:46:31.922"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:31.922" level="INFO">${matches} = ['2017']</msg>
+<status status="PASS" starttime="20190307 12:46:31.922" endtime="20190307 12:46:31.922"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.069" endtime="20190302 21:34:02.069"></status>
+<status status="PASS" starttime="20190307 12:46:31.922" endtime="20190307 12:46:31.922"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.042" endtime="20190302 21:34:02.069"></status>
+<status status="PASS" starttime="20190307 12:46:31.901" endtime="20190307 12:46:31.922"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-15&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-15&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -353,21 +449,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.097" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:31.936" level="INFO">${name} = •
 10/2016</msg>
-<status status="PASS" starttime="20190302 21:34:02.070" endtime="20190302 21:34:02.097"></status>
+<status status="PASS" starttime="20190307 12:46:31.922" endtime="20190307 12:46:31.936"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:31.936" level="INFO">${matches} = ['2016']</msg>
+<status status="PASS" starttime="20190307 12:46:31.936" endtime="20190307 12:46:31.936"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.097" endtime="20190302 21:34:02.098"></status>
+<status status="PASS" starttime="20190307 12:46:31.936" endtime="20190307 12:46:31.936"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.069" endtime="20190302 21:34:02.098"></status>
+<status status="PASS" starttime="20190307 12:46:31.922" endtime="20190307 12:46:31.936"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-16&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-16&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -376,21 +484,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.124" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:31.957" level="INFO">${name} = •
 11/2017</msg>
-<status status="PASS" starttime="20190302 21:34:02.098" endtime="20190302 21:34:02.125"></status>
+<status status="PASS" starttime="20190307 12:46:31.936" endtime="20190307 12:46:31.957"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:31.957" level="INFO">${matches} = ['2017']</msg>
+<status status="PASS" starttime="20190307 12:46:31.957" endtime="20190307 12:46:31.957"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.125" endtime="20190302 21:34:02.125"></status>
+<status status="PASS" starttime="20190307 12:46:31.957" endtime="20190307 12:46:31.957"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.098" endtime="20190302 21:34:02.125"></status>
+<status status="PASS" starttime="20190307 12:46:31.936" endtime="20190307 12:46:31.957"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-17&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-17&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -399,21 +519,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.153" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:31.972" level="INFO">${name} = •
 10/2015</msg>
-<status status="PASS" starttime="20190302 21:34:02.126" endtime="20190302 21:34:02.153"></status>
+<status status="PASS" starttime="20190307 12:46:31.957" endtime="20190307 12:46:31.972"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:31.972" level="INFO">${matches} = ['2015']</msg>
+<status status="PASS" starttime="20190307 12:46:31.972" endtime="20190307 12:46:31.972"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.153" endtime="20190302 21:34:02.154"></status>
+<status status="PASS" starttime="20190307 12:46:31.972" endtime="20190307 12:46:31.972"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.126" endtime="20190302 21:34:02.154"></status>
+<status status="PASS" starttime="20190307 12:46:31.957" endtime="20190307 12:46:31.972"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-18&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-18&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -422,21 +554,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.181" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:31.986" level="INFO">${name} = •
 11/2016</msg>
-<status status="PASS" starttime="20190302 21:34:02.154" endtime="20190302 21:34:02.181"></status>
+<status status="PASS" starttime="20190307 12:46:31.972" endtime="20190307 12:46:31.986"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:31.986" level="INFO">${matches} = ['2016']</msg>
+<status status="PASS" starttime="20190307 12:46:31.986" endtime="20190307 12:46:31.986"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.181" endtime="20190302 21:34:02.182"></status>
+<status status="PASS" starttime="20190307 12:46:31.986" endtime="20190307 12:46:31.992"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.154" endtime="20190302 21:34:02.182"></status>
+<status status="PASS" starttime="20190307 12:46:31.972" endtime="20190307 12:46:31.992"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-19&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-19&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -445,21 +589,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.208" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:32.006" level="INFO">${name} = •
 03/2016</msg>
-<status status="PASS" starttime="20190302 21:34:02.182" endtime="20190302 21:34:02.208"></status>
+<status status="PASS" starttime="20190307 12:46:31.992" endtime="20190307 12:46:32.006"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:32.006" level="INFO">${matches} = ['2016']</msg>
+<status status="PASS" starttime="20190307 12:46:32.006" endtime="20190307 12:46:32.006"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.208" endtime="20190302 21:34:02.209"></status>
+<status status="PASS" starttime="20190307 12:46:32.006" endtime="20190307 12:46:32.006"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.182" endtime="20190302 21:34:02.209"></status>
+<status status="PASS" starttime="20190307 12:46:31.992" endtime="20190307 12:46:32.006"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-20&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-20&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -468,21 +624,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.235" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:32.026" level="INFO">${name} = •
 02/2016</msg>
-<status status="PASS" starttime="20190302 21:34:02.209" endtime="20190302 21:34:02.235"></status>
+<status status="PASS" starttime="20190307 12:46:32.012" endtime="20190307 12:46:32.026"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:32.026" level="INFO">${matches} = ['2016']</msg>
+<status status="PASS" starttime="20190307 12:46:32.026" endtime="20190307 12:46:32.026"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.235" endtime="20190302 21:34:02.236"></status>
+<status status="PASS" starttime="20190307 12:46:32.026" endtime="20190307 12:46:32.032"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.209" endtime="20190302 21:34:02.236"></status>
+<status status="PASS" starttime="20190307 12:46:32.006" endtime="20190307 12:46:32.032"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-21&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-21&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -491,21 +659,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.262" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:32.045" level="INFO">${name} = •
 12/2014</msg>
-<status status="PASS" starttime="20190302 21:34:02.236" endtime="20190302 21:34:02.263"></status>
+<status status="PASS" starttime="20190307 12:46:32.032" endtime="20190307 12:46:32.045"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:32.045" level="INFO">${matches} = ['2014']</msg>
+<status status="PASS" starttime="20190307 12:46:32.045" endtime="20190307 12:46:32.045"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.263" endtime="20190302 21:34:02.263"></status>
+<status status="PASS" starttime="20190307 12:46:32.045" endtime="20190307 12:46:32.045"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.236" endtime="20190302 21:34:02.263"></status>
+<status status="PASS" starttime="20190307 12:46:32.032" endtime="20190307 12:46:32.045"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-22&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-22&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -514,21 +694,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.290" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:32.066" level="INFO">${name} = •
 02/2016</msg>
-<status status="PASS" starttime="20190302 21:34:02.264" endtime="20190302 21:34:02.290"></status>
+<status status="PASS" starttime="20190307 12:46:32.045" endtime="20190307 12:46:32.066"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:32.066" level="INFO">${matches} = ['2016']</msg>
+<status status="PASS" starttime="20190307 12:46:32.066" endtime="20190307 12:46:32.066"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.290" endtime="20190302 21:34:02.291"></status>
+<status status="PASS" starttime="20190307 12:46:32.066" endtime="20190307 12:46:32.066"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.263" endtime="20190302 21:34:02.291"></status>
+<status status="PASS" starttime="20190307 12:46:32.045" endtime="20190307 12:46:32.066"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-23&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-23&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -537,21 +729,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.317" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:32.082" level="INFO">${name} = •
 06/2016</msg>
-<status status="PASS" starttime="20190302 21:34:02.291" endtime="20190302 21:34:02.317"></status>
+<status status="PASS" starttime="20190307 12:46:32.066" endtime="20190307 12:46:32.082"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:32.082" level="INFO">${matches} = ['2016']</msg>
+<status status="PASS" starttime="20190307 12:46:32.082" endtime="20190307 12:46:32.082"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.318" endtime="20190302 21:34:02.318"></status>
+<status status="PASS" starttime="20190307 12:46:32.082" endtime="20190307 12:46:32.086"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.291" endtime="20190302 21:34:02.318"></status>
+<status status="PASS" starttime="20190307 12:46:32.066" endtime="20190307 12:46:32.086"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-24&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-24&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -560,21 +764,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.346" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:32.101" level="INFO">${name} = •
 02/2018</msg>
-<status status="PASS" starttime="20190302 21:34:02.319" endtime="20190302 21:34:02.347"></status>
+<status status="PASS" starttime="20190307 12:46:32.086" endtime="20190307 12:46:32.101"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:32.101" level="INFO">${matches} = ['2018']</msg>
+<status status="PASS" starttime="20190307 12:46:32.101" endtime="20190307 12:46:32.101"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.347" endtime="20190302 21:34:02.347"></status>
+<status status="PASS" starttime="20190307 12:46:32.101" endtime="20190307 12:46:32.101"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.318" endtime="20190302 21:34:02.347"></status>
+<status status="PASS" starttime="20190307 12:46:32.086" endtime="20190307 12:46:32.101"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-25&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-25&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -583,21 +799,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.375" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:32.115" level="INFO">${name} = •
 10/2017</msg>
-<status status="PASS" starttime="20190302 21:34:02.348" endtime="20190302 21:34:02.376"></status>
+<status status="PASS" starttime="20190307 12:46:32.101" endtime="20190307 12:46:32.115"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:32.115" level="INFO">${matches} = ['2017']</msg>
+<status status="PASS" starttime="20190307 12:46:32.115" endtime="20190307 12:46:32.115"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.376" endtime="20190302 21:34:02.376"></status>
+<status status="PASS" starttime="20190307 12:46:32.115" endtime="20190307 12:46:32.115"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.347" endtime="20190302 21:34:02.376"></status>
+<status status="PASS" starttime="20190307 12:46:32.101" endtime="20190307 12:46:32.115"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-26&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-26&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -606,21 +834,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.403" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:32.132" level="INFO">${name} = •
 06/2017</msg>
-<status status="PASS" starttime="20190302 21:34:02.377" endtime="20190302 21:34:02.403"></status>
+<status status="PASS" starttime="20190307 12:46:32.115" endtime="20190307 12:46:32.132"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:32.132" level="INFO">${matches} = ['2017']</msg>
+<status status="PASS" starttime="20190307 12:46:32.132" endtime="20190307 12:46:32.132"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.403" endtime="20190302 21:34:02.404"></status>
+<status status="PASS" starttime="20190307 12:46:32.132" endtime="20190307 12:46:32.132"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.376" endtime="20190302 21:34:02.404"></status>
+<status status="PASS" starttime="20190307 12:46:32.115" endtime="20190307 12:46:32.132"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-27&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-27&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -629,21 +869,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.435" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:32.152" level="INFO">${name} = •
 12/2016</msg>
-<status status="PASS" starttime="20190302 21:34:02.404" endtime="20190302 21:34:02.435"></status>
+<status status="PASS" starttime="20190307 12:46:32.132" endtime="20190307 12:46:32.152"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:32.152" level="INFO">${matches} = ['2016']</msg>
+<status status="PASS" starttime="20190307 12:46:32.152" endtime="20190307 12:46:32.152"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.435" endtime="20190302 21:34:02.436"></status>
+<status status="PASS" starttime="20190307 12:46:32.152" endtime="20190307 12:46:32.152"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.404" endtime="20190302 21:34:02.436"></status>
+<status status="PASS" starttime="20190307 12:46:32.132" endtime="20190307 12:46:32.152"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-28&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-28&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -652,21 +904,33 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.464" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:32.162" level="INFO">${name} = •
 02/2016</msg>
-<status status="PASS" starttime="20190302 21:34:02.436" endtime="20190302 21:34:02.464"></status>
+<status status="PASS" starttime="20190307 12:46:32.152" endtime="20190307 12:46:32.162"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:32.162" level="INFO">${matches} = ['2016']</msg>
+<status status="PASS" starttime="20190307 12:46:32.162" endtime="20190307 12:46:32.162"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.465" endtime="20190302 21:34:02.465"></status>
+<status status="PASS" starttime="20190307 12:46:32.162" endtime="20190307 12:46:32.162"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.436" endtime="20190302 21:34:02.465"></status>
+<status status="PASS" starttime="20190307 12:46:32.152" endtime="20190307 12:46:32.162"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-29&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-29&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -675,93 +939,551 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.493" level="INFO">${name} = •
-11/2016</msg>
-<status status="PASS" starttime="20190302 21:34:02.466" endtime="20190302 21:34:02.493"></status>
-</kw>
-<kw name="Append To List" library="Collections">
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<arguments>
-<arg>${result}</arg>
-<arg>${name}</arg>
-</arguments>
-<status status="PASS" starttime="20190302 21:34:02.494" endtime="20190302 21:34:02.494"></status>
-</kw>
-<status status="PASS" starttime="20190302 21:34:02.466" endtime="20190302 21:34:02.494"></status>
-</kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-30&quot;)&gt;" type="foritem">
-<kw name="Get Text" library="SeleniumLibrary">
-<doc>Returns the text value of element identified by ``locator``.</doc>
-<arguments>
-<arg>${locator}</arg>
-</arguments>
-<assign>
-<var>${name}</var>
-</assign>
-<msg timestamp="20190302 21:34:02.521" level="INFO">${name} = •
+<msg timestamp="20190307 12:46:32.183" level="INFO">${name} = •
 08/2017</msg>
-<status status="PASS" starttime="20190302 21:34:02.494" endtime="20190302 21:34:02.521"></status>
+<status status="PASS" starttime="20190307 12:46:32.162" endtime="20190307 12:46:32.183"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:32.183" level="INFO">${matches} = ['2017']</msg>
+<status status="PASS" starttime="20190307 12:46:32.183" endtime="20190307 12:46:32.183"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:02.522" endtime="20190302 21:34:02.522"></status>
+<status status="PASS" starttime="20190307 12:46:32.183" endtime="20190307 12:46:32.183"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.494" endtime="20190302 21:34:02.522"></status>
+<status status="PASS" starttime="20190307 12:46:32.162" endtime="20190307 12:46:32.183"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:01.831" endtime="20190302 21:34:02.522"></status>
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-30&quot;)&gt;" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${name}</var>
+</assign>
+<msg timestamp="20190307 12:46:32.201" level="INFO">${name} = •
+05/2017</msg>
+<status status="PASS" starttime="20190307 12:46:32.183" endtime="20190307 12:46:32.201"></status>
 </kw>
-<kw name="Return Years Only" library="helpers.HelpLib">
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\\d{4}</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:32.201" level="INFO">${matches} = ['2017']</msg>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${result}</arg>
+<arg>${matches}</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.183" endtime="20190307 12:46:32.201"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:31.746" endtime="20190307 12:46:32.201"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>[item for sublist in ${result} for item in (sublist if isinstance(sublist, list) else [sublist])]</arg>
 </arguments>
 <assign>
-<var>${yearsSorted}</var>
+<var>${flat}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.523" level="INFO">${yearsSorted} = [2016.0, 2016.0, 2016.0, 2017.0, 2015.0, 2017.0, 2015.0, 2017.0, 2016.0, 2017.0, 2015.0, 2016.0, 2016.0, 2016.0, 2014.0, 2016.0, 2016.0, 2018.0, 2017.0, 2017.0, 2016.0, 2016.0, 2016.0, 2017.0]</msg>
-<status status="PASS" starttime="20190302 21:34:02.522" endtime="20190302 21:34:02.523"></status>
+<msg timestamp="20190307 12:46:32.201" level="INFO">${flat} = ['2016', '2016', '2016', '2017', '2015', '2017', '2015', '2017', '2016', '2017', '2015', '2016', '2016', '2016', '2014', '2016', '2016', '2018', '2017', '2017', '2016', '2016', '2017', '2017']</msg>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
 </kw>
-<kw name="Registration" library="helpers.HelpLib">
+<kw name="Convert To Integer" library="BuiltIn">
+<doc>Converts the given item to an integer number.</doc>
 <arguments>
-<arg>${yearsSorted}</arg>
+<arg>2014</arg>
 </arguments>
 <assign>
-<var>${boleanY}</var>
+<var>${numbs}</var>
 </assign>
-<msg timestamp="20190302 21:34:02.523" level="INFO">${boleanY} = True</msg>
-<status status="PASS" starttime="20190302 21:34:02.523" endtime="20190302 21:34:02.523"></status>
+<msg timestamp="20190307 12:46:32.201" level="INFO">${numbs} = 2014</msg>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
 </kw>
-<kw name="Should Be Equal As Strings" library="BuiltIn">
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<arguments>
-<arg>${boleanY}</arg>
-<arg>True</arg>
-</arguments>
-<msg timestamp="20190302 21:34:02.524" level="INFO">Argument types are:
-&lt;class 'bool'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20190302 21:34:02.524" endtime="20190302 21:34:02.524"></status>
-</kw>
+<kw name="${locator} IN [ @{flat} ]" type="for">
+<kw name="${locator} = 2016" type="foritem">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${yearsSorted}</arg>
+<arg>${locator}</arg>
 </arguments>
-<msg timestamp="20190302 21:34:02.525" level="INFO">[2016.0, 2016.0, 2016.0, 2017.0, 2015.0, 2017.0, 2015.0, 2017.0, 2016.0, 2017.0, 2015.0, 2016.0, 2016.0, 2016.0, 2014.0, 2016.0, 2016.0, 2018.0, 2017.0, 2017.0, 2016.0, 2016.0, 2016.0, 2017.0]</msg>
-<status status="PASS" starttime="20190302 21:34:02.524" endtime="20190302 21:34:02.525"></status>
+<msg timestamp="20190307 12:46:32.201" level="INFO">2016</msg>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
 </kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
+</kw>
+<kw name="${locator} = 2016" type="foritem">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${boleanY}</arg>
+<arg>${locator}</arg>
 </arguments>
-<msg timestamp="20190302 21:34:02.525" level="INFO">True</msg>
-<status status="PASS" starttime="20190302 21:34:02.525" endtime="20190302 21:34:02.526"></status>
+<msg timestamp="20190307 12:46:32.201" level="INFO">2016</msg>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:33:58.780" endtime="20190302 21:34:02.526"></status>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
+</kw>
+<kw name="${locator} = 2016" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.201" level="INFO">2016</msg>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
+</kw>
+<kw name="${locator} = 2017" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.201" level="INFO">2017</msg>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
+</kw>
+<kw name="${locator} = 2015" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.201" level="INFO">2015</msg>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
+</kw>
+<kw name="${locator} = 2017" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.201" level="INFO">2017</msg>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.201"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="${locator} = 2015" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.212" level="INFO">2015</msg>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="${locator} = 2017" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.212" level="INFO">2017</msg>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="${locator} = 2016" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.212" level="INFO">2016</msg>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="${locator} = 2017" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.212" level="INFO">2017</msg>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="${locator} = 2015" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.212" level="INFO">2015</msg>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="${locator} = 2016" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.212" level="INFO">2016</msg>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="${locator} = 2016" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.212" level="INFO">2016</msg>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="${locator} = 2016" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.212" level="INFO">2016</msg>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="${locator} = 2014" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.212" level="INFO">2014</msg>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="${locator} = 2016" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.212" level="INFO">2016</msg>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="${locator} = 2016" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.212" level="INFO">2016</msg>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.212"></status>
+</kw>
+<kw name="${locator} = 2018" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.222" level="INFO">2018</msg>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.222"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.222" endtime="20190307 12:46:32.222"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.212" endtime="20190307 12:46:32.222"></status>
+</kw>
+<kw name="${locator} = 2017" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.222" level="INFO">2017</msg>
+<status status="PASS" starttime="20190307 12:46:32.222" endtime="20190307 12:46:32.222"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.222" endtime="20190307 12:46:32.222"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.222" endtime="20190307 12:46:32.222"></status>
+</kw>
+<kw name="${locator} = 2017" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.222" level="INFO">2017</msg>
+<status status="PASS" starttime="20190307 12:46:32.222" endtime="20190307 12:46:32.222"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.222" endtime="20190307 12:46:32.225"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.222" endtime="20190307 12:46:32.225"></status>
+</kw>
+<kw name="${locator} = 2016" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.225" level="INFO">2016</msg>
+<status status="PASS" starttime="20190307 12:46:32.225" endtime="20190307 12:46:32.225"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.225" endtime="20190307 12:46:32.225"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.225" endtime="20190307 12:46:32.225"></status>
+</kw>
+<kw name="${locator} = 2016" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.225" level="INFO">2016</msg>
+<status status="PASS" starttime="20190307 12:46:32.225" endtime="20190307 12:46:32.225"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.225" endtime="20190307 12:46:32.225"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.225" endtime="20190307 12:46:32.225"></status>
+</kw>
+<kw name="${locator} = 2017" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.225" level="INFO">2017</msg>
+<status status="PASS" starttime="20190307 12:46:32.225" endtime="20190307 12:46:32.225"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.225" endtime="20190307 12:46:32.225"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.225" endtime="20190307 12:46:32.225"></status>
+</kw>
+<kw name="${locator} = 2017" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190307 12:46:32.225" level="INFO">2017</msg>
+<status status="PASS" starttime="20190307 12:46:32.225" endtime="20190307 12:46:32.225"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${locator} &gt;= ${numbs}</arg>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20190307 12:46:32.225" endtime="20190307 12:46:32.225"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.225" endtime="20190307 12:46:32.225"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:32.201" endtime="20190307 12:46:32.225"></status>
+</kw>
+<status status="PASS" starttime="20190307 12:46:28.704" endtime="20190307 12:46:32.225"></status>
 </kw>
 <kw name="And Verify all Cars are Filtered By Price Descending">
 <kw name="Sleep" library="BuiltIn">
@@ -769,8 +1491,8 @@
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190302 21:34:04.528" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20190302 21:34:02.527" endtime="20190302 21:34:04.528"></status>
+<msg timestamp="20190307 12:46:34.236" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20190307 12:46:32.225" endtime="20190307 12:46:34.242"></status>
 </kw>
 <kw name="Get WebElements" library="SeleniumLibrary">
 <doc>Returns list of WebElement objects matching the ``locator``.</doc>
@@ -780,19 +1502,27 @@
 <assign>
 <var>@{locators}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.562" level="INFO">@{locators} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="76a0880fab8ec87878408e2b8919142b", element="0.41694077529439744-31")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (session="76a0880f...</msg>
-<status status="PASS" starttime="20190302 21:34:04.528" endtime="20190302 21:34:04.562"></status>
+<msg timestamp="20190307 12:46:34.272" level="INFO">@{locators} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="cbbae7a94939c26d57a46af3abe26f04", element="0.4119628156363082-31")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (session="cbbae7a94...</msg>
+<status status="PASS" starttime="20190307 12:46:34.242" endtime="20190307 12:46:34.272"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
 <assign>
 <var>${priceAll}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.563" level="INFO">${priceAll} = []</msg>
-<status status="PASS" starttime="20190302 21:34:04.562" endtime="20190302 21:34:04.563"></status>
+<msg timestamp="20190307 12:46:34.272" level="INFO">${priceAll} = []</msg>
+<status status="PASS" starttime="20190307 12:46:34.272" endtime="20190307 12:46:34.272"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>${sortedList}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.272" level="INFO">${sortedList} = []</msg>
+<status status="PASS" starttime="20190307 12:46:34.272" endtime="20190307 12:46:34.272"></status>
 </kw>
 <kw name="${locator} IN [ @{locators} ]" type="for">
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-31&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-31&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -801,20 +1531,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.587" level="INFO">${name} = 41.490 €</msg>
-<status status="PASS" starttime="20190302 21:34:04.563" endtime="20190302 21:34:04.587"></status>
+<msg timestamp="20190307 12:46:34.296" level="INFO">${name} = 41.490 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.272" endtime="20190307 12:46:34.296"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.296" level="INFO">${matches} = ['41.49']</msg>
+<status status="PASS" starttime="20190307 12:46:34.296" endtime="20190307 12:46:34.296"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:04.587" endtime="20190302 21:34:04.588"></status>
+<status status="PASS" starttime="20190307 12:46:34.296" endtime="20190307 12:46:34.296"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.563" endtime="20190302 21:34:04.588"></status>
+<status status="PASS" starttime="20190307 12:46:34.272" endtime="20190307 12:46:34.296"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-32&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-32&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -823,20 +1565,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.612" level="INFO">${name} = 39.970 €</msg>
-<status status="PASS" starttime="20190302 21:34:04.588" endtime="20190302 21:34:04.612"></status>
+<msg timestamp="20190307 12:46:34.331" level="INFO">${name} = 39.970 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.296" endtime="20190307 12:46:34.331"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.333" level="INFO">${matches} = ['39.97']</msg>
+<status status="PASS" starttime="20190307 12:46:34.331" endtime="20190307 12:46:34.333"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:04.613" endtime="20190302 21:34:04.613"></status>
+<status status="PASS" starttime="20190307 12:46:34.334" endtime="20190307 12:46:34.335"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.588" endtime="20190302 21:34:04.613"></status>
+<status status="PASS" starttime="20190307 12:46:34.296" endtime="20190307 12:46:34.335"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-33&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-33&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -845,20 +1599,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.638" level="INFO">${name} = 37.900 €</msg>
-<status status="PASS" starttime="20190302 21:34:04.613" endtime="20190302 21:34:04.638"></status>
+<msg timestamp="20190307 12:46:34.362" level="INFO">${name} = 37.900 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.336" endtime="20190307 12:46:34.362"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.362" level="INFO">${matches} = ['37.90']</msg>
+<status status="PASS" starttime="20190307 12:46:34.362" endtime="20190307 12:46:34.362"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:04.638" endtime="20190302 21:34:04.638"></status>
+<status status="PASS" starttime="20190307 12:46:34.362" endtime="20190307 12:46:34.362"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.613" endtime="20190302 21:34:04.638"></status>
+<status status="PASS" starttime="20190307 12:46:34.336" endtime="20190307 12:46:34.362"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-34&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-34&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -867,20 +1633,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.664" level="INFO">${name} = 37.490 €</msg>
-<status status="PASS" starttime="20190302 21:34:04.639" endtime="20190302 21:34:04.664"></status>
+<msg timestamp="20190307 12:46:34.382" level="INFO">${name} = 37.490 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.362" endtime="20190307 12:46:34.382"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.382" level="INFO">${matches} = ['37.49']</msg>
+<status status="PASS" starttime="20190307 12:46:34.382" endtime="20190307 12:46:34.382"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:04.664" endtime="20190302 21:34:04.664"></status>
+<status status="PASS" starttime="20190307 12:46:34.382" endtime="20190307 12:46:34.382"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.639" endtime="20190302 21:34:04.664"></status>
+<status status="PASS" starttime="20190307 12:46:34.362" endtime="20190307 12:46:34.382"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-35&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-35&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -889,20 +1667,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.689" level="INFO">${name} = 35.900 €</msg>
-<status status="PASS" starttime="20190302 21:34:04.665" endtime="20190302 21:34:04.689"></status>
+<msg timestamp="20190307 12:46:34.402" level="INFO">${name} = 35.900 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.382" endtime="20190307 12:46:34.402"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.404" level="INFO">${matches} = ['35.90']</msg>
+<status status="PASS" starttime="20190307 12:46:34.402" endtime="20190307 12:46:34.404"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:04.690" endtime="20190302 21:34:04.690"></status>
+<status status="PASS" starttime="20190307 12:46:34.404" endtime="20190307 12:46:34.404"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.665" endtime="20190302 21:34:04.690"></status>
+<status status="PASS" starttime="20190307 12:46:34.382" endtime="20190307 12:46:34.404"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-36&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-36&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -911,20 +1701,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.715" level="INFO">${name} = 35.490 €</msg>
-<status status="PASS" starttime="20190302 21:34:04.691" endtime="20190302 21:34:04.715"></status>
+<msg timestamp="20190307 12:46:34.425" level="INFO">${name} = 35.490 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.404" endtime="20190307 12:46:34.425"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.425" level="INFO">${matches} = ['35.49']</msg>
+<status status="PASS" starttime="20190307 12:46:34.425" endtime="20190307 12:46:34.425"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:04.715" endtime="20190302 21:34:04.716"></status>
+<status status="PASS" starttime="20190307 12:46:34.425" endtime="20190307 12:46:34.425"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.691" endtime="20190302 21:34:04.716"></status>
+<status status="PASS" starttime="20190307 12:46:34.404" endtime="20190307 12:46:34.425"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-37&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-37&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -933,20 +1735,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.741" level="INFO">${name} = 35.450 €</msg>
-<status status="PASS" starttime="20190302 21:34:04.716" endtime="20190302 21:34:04.741"></status>
+<msg timestamp="20190307 12:46:34.442" level="INFO">${name} = 35.450 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.425" endtime="20190307 12:46:34.442"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.442" level="INFO">${matches} = ['35.45']</msg>
+<status status="PASS" starttime="20190307 12:46:34.442" endtime="20190307 12:46:34.442"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:04.741" endtime="20190302 21:34:04.742"></status>
+<status status="PASS" starttime="20190307 12:46:34.442" endtime="20190307 12:46:34.442"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.716" endtime="20190302 21:34:04.742"></status>
+<status status="PASS" starttime="20190307 12:46:34.425" endtime="20190307 12:46:34.442"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-38&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-38&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -955,20 +1769,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.768" level="INFO">${name} = 34.880 €</msg>
-<status status="PASS" starttime="20190302 21:34:04.742" endtime="20190302 21:34:04.768"></status>
+<msg timestamp="20190307 12:46:34.456" level="INFO">${name} = 34.880 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.442" endtime="20190307 12:46:34.462"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.462" level="INFO">${matches} = ['34.88']</msg>
+<status status="PASS" starttime="20190307 12:46:34.462" endtime="20190307 12:46:34.462"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:04.768" endtime="20190302 21:34:04.769"></status>
+<status status="PASS" starttime="20190307 12:46:34.462" endtime="20190307 12:46:34.462"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.742" endtime="20190302 21:34:04.769"></status>
+<status status="PASS" starttime="20190307 12:46:34.442" endtime="20190307 12:46:34.462"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-39&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-39&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -977,20 +1803,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.794" level="INFO">${name} = 34.490 €</msg>
-<status status="PASS" starttime="20190302 21:34:04.769" endtime="20190302 21:34:04.794"></status>
+<msg timestamp="20190307 12:46:34.482" level="INFO">${name} = 34.490 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.462" endtime="20190307 12:46:34.482"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.482" level="INFO">${matches} = ['34.49']</msg>
+<status status="PASS" starttime="20190307 12:46:34.482" endtime="20190307 12:46:34.482"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:04.795" endtime="20190302 21:34:04.795"></status>
+<status status="PASS" starttime="20190307 12:46:34.482" endtime="20190307 12:46:34.482"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.769" endtime="20190302 21:34:04.795"></status>
+<status status="PASS" starttime="20190307 12:46:34.462" endtime="20190307 12:46:34.482"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-40&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-40&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -999,20 +1837,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.827" level="INFO">${name} = 34.390 €</msg>
-<status status="PASS" starttime="20190302 21:34:04.795" endtime="20190302 21:34:04.827"></status>
+<msg timestamp="20190307 12:46:34.502" level="INFO">${name} = 34.390 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.482" endtime="20190307 12:46:34.504"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.504" level="INFO">${matches} = ['34.39']</msg>
+<status status="PASS" starttime="20190307 12:46:34.504" endtime="20190307 12:46:34.504"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:04.827" endtime="20190302 21:34:04.827"></status>
+<status status="PASS" starttime="20190307 12:46:34.504" endtime="20190307 12:46:34.504"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.795" endtime="20190302 21:34:04.827"></status>
+<status status="PASS" starttime="20190307 12:46:34.482" endtime="20190307 12:46:34.504"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-41&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-41&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -1021,20 +1871,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.854" level="INFO">${name} = 33.990 €</msg>
-<status status="PASS" starttime="20190302 21:34:04.828" endtime="20190302 21:34:04.854"></status>
+<msg timestamp="20190307 12:46:34.525" level="INFO">${name} = 33.990 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.504" endtime="20190307 12:46:34.525"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.525" level="INFO">${matches} = ['33.99']</msg>
+<status status="PASS" starttime="20190307 12:46:34.525" endtime="20190307 12:46:34.525"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:04.855" endtime="20190302 21:34:04.855"></status>
+<status status="PASS" starttime="20190307 12:46:34.525" endtime="20190307 12:46:34.525"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.827" endtime="20190302 21:34:04.855"></status>
+<status status="PASS" starttime="20190307 12:46:34.504" endtime="20190307 12:46:34.525"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-42&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-42&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -1043,20 +1905,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.881" level="INFO">${name} = 33.900 €</msg>
-<status status="PASS" starttime="20190302 21:34:04.855" endtime="20190302 21:34:04.881"></status>
+<msg timestamp="20190307 12:46:34.546" level="INFO">${name} = 33.900 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.525" endtime="20190307 12:46:34.546"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.547" level="INFO">${matches} = ['33.90']</msg>
+<status status="PASS" starttime="20190307 12:46:34.546" endtime="20190307 12:46:34.547"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:04.881" endtime="20190302 21:34:04.882"></status>
+<status status="PASS" starttime="20190307 12:46:34.547" endtime="20190307 12:46:34.547"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.855" endtime="20190302 21:34:04.882"></status>
+<status status="PASS" starttime="20190307 12:46:34.525" endtime="20190307 12:46:34.547"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-43&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-43&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -1065,20 +1939,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.907" level="INFO">${name} = 33.890 €</msg>
-<status status="PASS" starttime="20190302 21:34:04.882" endtime="20190302 21:34:04.908"></status>
+<msg timestamp="20190307 12:46:34.566" level="INFO">${name} = 33.890 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.547" endtime="20190307 12:46:34.566"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.567" level="INFO">${matches} = ['33.89']</msg>
+<status status="PASS" starttime="20190307 12:46:34.566" endtime="20190307 12:46:34.567"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:04.908" endtime="20190302 21:34:04.908"></status>
+<status status="PASS" starttime="20190307 12:46:34.567" endtime="20190307 12:46:34.567"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.882" endtime="20190302 21:34:04.908"></status>
+<status status="PASS" starttime="20190307 12:46:34.547" endtime="20190307 12:46:34.567"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-44&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-44&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -1087,20 +1973,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.933" level="INFO">${name} = 33.890 €</msg>
-<status status="PASS" starttime="20190302 21:34:04.909" endtime="20190302 21:34:04.934"></status>
+<msg timestamp="20190307 12:46:34.587" level="INFO">${name} = 33.890 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.568" endtime="20190307 12:46:34.587"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.587" level="INFO">${matches} = ['33.89']</msg>
+<status status="PASS" starttime="20190307 12:46:34.587" endtime="20190307 12:46:34.587"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:04.934" endtime="20190302 21:34:04.934"></status>
+<status status="PASS" starttime="20190307 12:46:34.587" endtime="20190307 12:46:34.587"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.908" endtime="20190302 21:34:04.934"></status>
+<status status="PASS" starttime="20190307 12:46:34.568" endtime="20190307 12:46:34.587"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-45&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-45&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -1109,20 +2007,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.959" level="INFO">${name} = 33.490 €</msg>
-<status status="PASS" starttime="20190302 21:34:04.935" endtime="20190302 21:34:04.959"></status>
+<msg timestamp="20190307 12:46:34.625" level="INFO">${name} = 33.490 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.587" endtime="20190307 12:46:34.625"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.625" level="INFO">${matches} = ['33.49']</msg>
+<status status="PASS" starttime="20190307 12:46:34.625" endtime="20190307 12:46:34.625"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:04.960" endtime="20190302 21:34:04.960"></status>
+<status status="PASS" starttime="20190307 12:46:34.625" endtime="20190307 12:46:34.625"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.934" endtime="20190302 21:34:04.960"></status>
+<status status="PASS" starttime="20190307 12:46:34.587" endtime="20190307 12:46:34.625"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-46&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-46&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -1131,20 +2041,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:04.986" level="INFO">${name} = 32.990 €</msg>
-<status status="PASS" starttime="20190302 21:34:04.961" endtime="20190302 21:34:04.986"></status>
+<msg timestamp="20190307 12:46:34.656" level="INFO">${name} = 32.990 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.625" endtime="20190307 12:46:34.656"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.656" level="INFO">${matches} = ['32.99']</msg>
+<status status="PASS" starttime="20190307 12:46:34.656" endtime="20190307 12:46:34.656"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:04.986" endtime="20190302 21:34:04.987"></status>
+<status status="PASS" starttime="20190307 12:46:34.656" endtime="20190307 12:46:34.656"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.961" endtime="20190302 21:34:04.987"></status>
+<status status="PASS" starttime="20190307 12:46:34.625" endtime="20190307 12:46:34.656"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-47&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-47&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -1153,20 +2075,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:05.012" level="INFO">${name} = 32.990 €</msg>
-<status status="PASS" starttime="20190302 21:34:04.987" endtime="20190302 21:34:05.012"></status>
+<msg timestamp="20190307 12:46:34.676" level="INFO">${name} = 32.990 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.656" endtime="20190307 12:46:34.676"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.676" level="INFO">${matches} = ['32.99']</msg>
+<status status="PASS" starttime="20190307 12:46:34.676" endtime="20190307 12:46:34.676"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:05.012" endtime="20190302 21:34:05.013"></status>
+<status status="PASS" starttime="20190307 12:46:34.676" endtime="20190307 12:46:34.682"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.987" endtime="20190302 21:34:05.013"></status>
+<status status="PASS" starttime="20190307 12:46:34.656" endtime="20190307 12:46:34.682"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-48&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-48&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -1175,20 +2109,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:05.039" level="INFO">${name} = 32.990 €</msg>
-<status status="PASS" starttime="20190302 21:34:05.013" endtime="20190302 21:34:05.039"></status>
+<msg timestamp="20190307 12:46:34.716" level="INFO">${name} = 32.990 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.682" endtime="20190307 12:46:34.716"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.716" level="INFO">${matches} = ['32.99']</msg>
+<status status="PASS" starttime="20190307 12:46:34.716" endtime="20190307 12:46:34.716"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:05.039" endtime="20190302 21:34:05.040"></status>
+<status status="PASS" starttime="20190307 12:46:34.716" endtime="20190307 12:46:34.716"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:05.013" endtime="20190302 21:34:05.040"></status>
+<status status="PASS" starttime="20190307 12:46:34.682" endtime="20190307 12:46:34.716"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-49&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-49&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -1197,20 +2143,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:05.066" level="INFO">${name} = 32.950 €</msg>
-<status status="PASS" starttime="20190302 21:34:05.040" endtime="20190302 21:34:05.066"></status>
+<msg timestamp="20190307 12:46:34.746" level="INFO">${name} = 32.950 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.716" endtime="20190307 12:46:34.752"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.752" level="INFO">${matches} = ['32.95']</msg>
+<status status="PASS" starttime="20190307 12:46:34.752" endtime="20190307 12:46:34.752"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:05.067" endtime="20190302 21:34:05.067"></status>
+<status status="PASS" starttime="20190307 12:46:34.752" endtime="20190307 12:46:34.756"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:05.040" endtime="20190302 21:34:05.067"></status>
+<status status="PASS" starttime="20190307 12:46:34.716" endtime="20190307 12:46:34.756"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-50&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-50&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -1219,20 +2177,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:05.092" level="INFO">${name} = 32.490 €</msg>
-<status status="PASS" starttime="20190302 21:34:05.067" endtime="20190302 21:34:05.093"></status>
+<msg timestamp="20190307 12:46:34.776" level="INFO">${name} = 32.490 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.756" endtime="20190307 12:46:34.776"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.782" level="INFO">${matches} = ['32.49']</msg>
+<status status="PASS" starttime="20190307 12:46:34.776" endtime="20190307 12:46:34.782"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:05.093" endtime="20190302 21:34:05.093"></status>
+<status status="PASS" starttime="20190307 12:46:34.782" endtime="20190307 12:46:34.782"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:05.067" endtime="20190302 21:34:05.093"></status>
+<status status="PASS" starttime="20190307 12:46:34.756" endtime="20190307 12:46:34.782"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-51&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-51&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -1241,20 +2211,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:05.119" level="INFO">${name} = 32.490 €</msg>
-<status status="PASS" starttime="20190302 21:34:05.094" endtime="20190302 21:34:05.119"></status>
+<msg timestamp="20190307 12:46:34.825" level="INFO">${name} = 32.490 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.782" endtime="20190307 12:46:34.825"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.825" level="INFO">${matches} = ['32.49']</msg>
+<status status="PASS" starttime="20190307 12:46:34.825" endtime="20190307 12:46:34.825"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:05.120" endtime="20190302 21:34:05.120"></status>
+<status status="PASS" starttime="20190307 12:46:34.825" endtime="20190307 12:46:34.825"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:05.093" endtime="20190302 21:34:05.120"></status>
+<status status="PASS" starttime="20190307 12:46:34.782" endtime="20190307 12:46:34.825"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-52&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-52&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -1263,20 +2245,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:05.148" level="INFO">${name} = 32.444 €</msg>
-<status status="PASS" starttime="20190302 21:34:05.120" endtime="20190302 21:34:05.148"></status>
+<msg timestamp="20190307 12:46:34.872" level="INFO">${name} = 32.444 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.825" endtime="20190307 12:46:34.872"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.876" level="INFO">${matches} = ['32.44']</msg>
+<status status="PASS" starttime="20190307 12:46:34.872" endtime="20190307 12:46:34.876"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:05.148" endtime="20190302 21:34:05.149"></status>
+<status status="PASS" starttime="20190307 12:46:34.876" endtime="20190307 12:46:34.876"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:05.120" endtime="20190302 21:34:05.149"></status>
+<status status="PASS" starttime="20190307 12:46:34.825" endtime="20190307 12:46:34.876"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-53&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-53&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -1285,20 +2279,32 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:05.174" level="INFO">${name} = 32.190 €</msg>
-<status status="PASS" starttime="20190302 21:34:05.149" endtime="20190302 21:34:05.174"></status>
+<msg timestamp="20190307 12:46:34.904" level="INFO">${name} = 31.890 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.876" endtime="20190307 12:46:34.904"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.904" level="INFO">${matches} = ['31.89']</msg>
+<status status="PASS" starttime="20190307 12:46:34.904" endtime="20190307 12:46:34.904"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:05.175" endtime="20190302 21:34:05.175"></status>
+<status status="PASS" starttime="20190307 12:46:34.904" endtime="20190307 12:46:34.904"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:05.149" endtime="20190302 21:34:05.175"></status>
+<status status="PASS" starttime="20190307 12:46:34.876" endtime="20190307 12:46:34.904"></status>
 </kw>
-<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;76a0880fab8ec87878408e2b8919142b&quot;, element=&quot;0.41694077529439744-54&quot;)&gt;" type="foritem">
+<kw name="${locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;cbbae7a94939c26d57a46af3abe26f04&quot;, element=&quot;0.4119628156363082-54&quot;)&gt;" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
@@ -1307,40 +2313,53 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20190302 21:34:05.201" level="INFO">${name} = 31.890 €</msg>
-<status status="PASS" starttime="20190302 21:34:05.176" endtime="20190302 21:34:05.201"></status>
+<msg timestamp="20190307 12:46:34.932" level="INFO">${name} = 31.500 €</msg>
+<status status="PASS" starttime="20190307 12:46:34.904" endtime="20190307 12:46:34.932"></status>
+</kw>
+<kw name="Get Regexp Matches" library="String">
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>\^.....</arg>
+</arguments>
+<assign>
+<var>${matches}</var>
+</assign>
+<msg timestamp="20190307 12:46:34.932" level="INFO">${matches} = ['31.50']</msg>
+<status status="PASS" starttime="20190307 12:46:34.932" endtime="20190307 12:46:34.932"></status>
 </kw>
 <kw name="Append To List" library="Collections">
 <doc>Adds ``values`` to the end of ``list``.</doc>
 <arguments>
 <arg>${priceAll}</arg>
-<arg>${name}</arg>
+<arg>${matches}</arg>
 </arguments>
-<status status="PASS" starttime="20190302 21:34:05.201" endtime="20190302 21:34:05.202"></status>
+<status status="PASS" starttime="20190307 12:46:34.932" endtime="20190307 12:46:34.932"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:05.175" endtime="20190302 21:34:05.202"></status>
+<status status="PASS" starttime="20190307 12:46:34.904" endtime="20190307 12:46:34.932"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:04.563" endtime="20190302 21:34:05.202"></status>
+<status status="PASS" starttime="20190307 12:46:34.272" endtime="20190307 12:46:34.932"></status>
 </kw>
-<kw name="Return Price Only" library="helpers.HelpLib">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
 <arguments>
-<arg>${priceAll}</arg>
+<arg>[item for sublist in ${priceAll} for item in (sublist if isinstance(sublist, list) else [sublist])]</arg>
 </arguments>
 <assign>
-<var>${prices}</var>
+<var>${flat}</var>
 </assign>
-<msg timestamp="20190302 21:34:05.203" level="INFO">${prices} = [41.49, 39.97, 37.9, 37.49, 35.9, 35.49, 35.45, 34.88, 34.49, 34.39, 33.99, 33.9, 33.89, 33.89, 33.49, 32.99, 32.99, 32.99, 32.95, 32.49, 32.49, 32.44, 32.19, 31.89]</msg>
-<status status="PASS" starttime="20190302 21:34:05.202" endtime="20190302 21:34:05.204"></status>
+<msg timestamp="20190307 12:46:34.932" level="INFO">${flat} = ['41.49', '39.97', '37.90', '37.49', '35.90', '35.49', '35.45', '34.88', '34.49', '34.39', '33.99', '33.90', '33.89', '33.89', '33.49', '32.99', '32.99', '32.99', '32.95', '32.49', '32.49', '32.44', '...</msg>
+<status status="PASS" starttime="20190307 12:46:34.932" endtime="20190307 12:46:34.932"></status>
 </kw>
 <kw name="Sorted List" library="helpers.HelpLib">
 <arguments>
-<arg>${prices}</arg>
+<arg>${flat}</arg>
 </arguments>
 <assign>
 <var>${sortPrices}</var>
 </assign>
-<msg timestamp="20190302 21:34:05.204" level="INFO">${sortPrices} = True</msg>
-<status status="PASS" starttime="20190302 21:34:05.204" endtime="20190302 21:34:05.204"></status>
+<msg timestamp="20190307 12:46:34.936" level="INFO">${sortPrices} = True</msg>
+<status status="PASS" starttime="20190307 12:46:34.932" endtime="20190307 12:46:34.936"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -1348,37 +2367,37 @@
 <arg>${sortPrices}</arg>
 <arg>True</arg>
 </arguments>
-<msg timestamp="20190302 21:34:05.205" level="INFO">Argument types are:
+<msg timestamp="20190307 12:46:34.936" level="INFO">Argument types are:
 &lt;class 'bool'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20190302 21:34:05.204" endtime="20190302 21:34:05.205"></status>
+<status status="PASS" starttime="20190307 12:46:34.936" endtime="20190307 12:46:34.936"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${prices}</arg>
+<arg>${sortPrices}</arg>
 </arguments>
-<msg timestamp="20190302 21:34:05.205" level="INFO">[41.49, 39.97, 37.9, 37.49, 35.9, 35.49, 35.45, 34.88, 34.49, 34.39, 33.99, 33.9, 33.89, 33.89, 33.49, 32.99, 32.99, 32.99, 32.95, 32.49, 32.49, 32.44, 32.19, 31.89]</msg>
-<status status="PASS" starttime="20190302 21:34:05.205" endtime="20190302 21:34:05.205"></status>
+<msg timestamp="20190307 12:46:34.936" level="INFO">True</msg>
+<status status="PASS" starttime="20190307 12:46:34.936" endtime="20190307 12:46:34.936"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${priceAll}</arg>
+<arg>${flat}</arg>
 </arguments>
-<msg timestamp="20190302 21:34:05.206" level="INFO">['41.490 €', '39.970 €', '37.900 €', '37.490 €', '35.900 €', '35.490 €', '35.450 €', '34.880 €', '34.490 €', '34.390 €', '33.990 €', '33.900 €', '33.890 €', '33.890 €', '33.490 €', '32.990 €', '32.990 €', '32.990 €', '32.950 €', '32.490 €', '32.490 €', '32.444 €', '32.190 €', '31.890 €']</msg>
-<status status="PASS" starttime="20190302 21:34:05.206" endtime="20190302 21:34:05.206"></status>
+<msg timestamp="20190307 12:46:34.936" level="INFO">['41.49', '39.97', '37.90', '37.49', '35.90', '35.49', '35.45', '34.88', '34.49', '34.39', '33.99', '33.90', '33.89', '33.89', '33.49', '32.99', '32.99', '32.99', '32.95', '32.49', '32.49', '32.44', '31.89', '31.50']</msg>
+<status status="PASS" starttime="20190307 12:46:34.936" endtime="20190307 12:46:34.936"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:34:02.526" endtime="20190302 21:34:05.207"></status>
+<status status="PASS" starttime="20190307 12:46:32.225" endtime="20190307 12:46:34.936"></status>
 </kw>
-<status status="PASS" starttime="20190302 21:33:43.607" endtime="20190302 21:34:05.207" critical="yes"></status>
+<status status="PASS" starttime="20190307 12:46:14.363" endtime="20190307 12:46:34.936" critical="yes"></status>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="teardown">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20190302 21:34:05.209" endtime="20190302 21:34:07.526"></status>
+<status status="PASS" starttime="20190307 12:46:34.936" endtime="20190307 12:46:38.402"></status>
 </kw>
 <doc>Auto1/QA Task</doc>
-<status status="PASS" starttime="20190302 21:33:35.801" endtime="20190302 21:34:07.526"></status>
+<status status="PASS" starttime="20190307 12:46:06.006" endtime="20190307 12:46:38.402"></status>
 </suite>
 <statistics>
 <total>
