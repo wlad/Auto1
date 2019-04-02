@@ -23,7 +23,7 @@ jobs:
       versionSpec: '$(python.version)'
       architecture: 'x64'
 
-  - script: pip install robotframework pip install robotframework-seleniumlibrary npm install chromedriver
+  - script: pip install robotframework robotframework-seleniumlibrary 
     displayName: 'Install dependencies'
 
   - script: |
