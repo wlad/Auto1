@@ -1,10 +1,10 @@
 *** Settings ***
-Documentation  Auto1/QA Task
-Library      SeleniumLibrary
-Library      String
-Library      helpers.HelpLib
-Library      Collections    
-Suite Setup  Open URL Locally
+Documentation   Auto1/QA Task
+Library         SeleniumLibrary
+Library         String
+Library         helpers.HelpLib
+Library         Collections    
+Suite Setup     Open URL Locally
 Suite Teardown  Close Browser
 
 
@@ -31,7 +31,11 @@ Open Tests in Souce Labs
 
 
 Open URL Locally
-    Open Browser    https://www.autohero.com/de/search/    chrome
+    #Open Webdriver hosted on Azure Devops
+    Create Webdriver    Chrome    executable_path=/home/vsts/work/node_modules/chromedriver/lib/chromedriver/chromedriver
+    
+    # Open Browser on Local Machine
+    # Open Browser    https://www.autohero.com/de/search/    chrome
     Maximize Browser Window
 
 Open URL AutoHero
