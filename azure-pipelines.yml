@@ -26,7 +26,7 @@ jobs:
   - script: pip install robotframework robotframework-seleniumlibrary && npm install chromedriver
     displayName: 'Install dependencies'
 
-- job: 'Run Robot'
+- job: 'Test'
   dependsOn: 'Test'
   pool:
     vmImage: 'Ubuntu-16.04'
@@ -36,7 +36,7 @@ jobs:
     inputs:
       versionSpec: '$(python.version)'
       architecture: 'x64'
-      
+
   - powershell: robot  TestCases.robot
     displayName: 'Run Robot Scripts'
 
