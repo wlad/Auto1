@@ -32,7 +32,7 @@ Open Tests in Souce Labs
 
 Open URL Locally
     #Open Webdriver hosted on Azure Devops
-    Create Webdriver    Chrome    executable_path=/home/vsts/work/node_modules/chromedriver/lib/chromedriver/chromedriver
+    Create Webdriver    Chrome    executable_path=/home/vsts/work/node_modules/chromedriver/lib/chromedriver/
     
     # Open Browser on Local Machine
     # Open Browser    https://www.autohero.com/de/search/    chrome
