@@ -27,6 +27,7 @@ jobs:
     displayName: 'Install dependencies'
 
   steps:
+  - task: Run Robot
   - powershell:
     
      robot  TestCases.robot
