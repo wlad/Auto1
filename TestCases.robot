@@ -39,7 +39,7 @@ Open URL Locally
     Maximize Browser Window
 
 Open URL AutoHero
-    Go To    https://www.autohero.com/de/search/   
+    Go To    https://www.autohero.com/
 
 User is on Advanced Search Page
     Sleep   5s
